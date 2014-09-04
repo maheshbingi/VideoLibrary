@@ -1,0 +1,117 @@
+<div class="main_wrapper"> 
+	<aside class="signup_form float_left">
+		<div class="form_signup_toggle float_left">
+			<div class="signup_info float_left">					
+			</div>   
+			  
+      		<form class="container signup_container form-horizontal float_left" action="/signUp" >
+      		                
+      		    <div class="control-group signup float_left clear_left">		          			          
+          			<label id="page-info" style="color:white;">Sign Up</label>
+        		</div>
+        		
+         		<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+            			<input type="text" id="firstname" placeholder="Firstname" name="firstname" value="">
+          			</div>          
+          			<label id="firstname_error"></label>
+        		</div>
+        
+         		<div class="control-group signup float_left marginLeft50">
+          			<div class="controls">
+            			<input type="text" id="lastname" placeholder="Lastname" name="lastname" value="">
+          			</div>          
+          			<label id="lastname_error"></label>
+        		</div>
+        
+        		<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+            			<input type="text" id="email" name="email" placeholder="Email"  value="" >
+          			</div>
+          			<label id="email_error"></label>
+        		</div>
+                
+        		<div class="control-group signup float_left marginLeft50">
+          			<div class="controls">
+            			<input type="password" id="password" name="password" placeholder="Password" >
+          			</div>
+          			<label id="password_error"></label>
+        		</div>
+        		
+        		<div class="control-group signup float_left clear_left">				
+					<select id="membership_type" name="membership_type" class="dropdown_list membership_type">
+						<option value="0">Choose a Membership</option>
+						
+						<% if(typeof data != 'undefined') { %>
+							<% for(var i = 0; i < data.membership_types.length; i++) { %>
+								<option value="<%= data.membership_types[i].id%>"><%= data.membership_types[i].type %></option>
+							<% } %>
+						<% } %>	
+						
+					</select>    					
+				</div>
+				
+				<div class="control-group signup float_left marginLeft50">
+          			<div class="controls">
+            			<input type="text" id="ssn" placeholder="SSN" name="lastname" value="">
+          			</div>          
+          			<label id="lastname_error"></label>
+        		</div>
+
+        		<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+            			<input type="text" id="street" name="street" placeholder="Street"  value="" >
+          			</div>
+          			<label id="street_error"></label>
+        		</div>	        	        		        			        		
+				
+				<div class="control-group signup float_left marginLeft50">
+          			<div class="controls">
+            			<input type="text" id="city" name="city" placeholder="City"  value="" >
+          			</div>
+          			<label id="city_error"></label>
+        		</div>
+        		
+        		<div class="control-group signup float_left clear_left">				
+					<select id="state" name="state" class="dropdown_list name_of_state">
+						<option value="0">Choose a State</option>
+						
+						<% if(typeof data != 'undefined') { %>
+							<% for(var i = 0; i < data.states.length; i++) { %>
+								<option value="<%= data.states[i].name %>"><%= data.states[i].name %></option>
+							<% } %>
+						<% } %>	
+						
+					</select>    					
+				</div>
+				
+				<div class="control-group signup float_left clear_left zipe_code_adjust">
+          			<div class="controls">
+            			<input type="text" id="zipcode1" name="zipcode1" placeholder="Zipcode"  value="" maxlength=5>
+          			</div>
+          			<label id="zipcode1_error"></label>
+        		</div>
+        		
+        		<span class="zipe_code_divider float_left"></span>
+        		
+        		<div class="control-group signup float_left zipe_code_adjust">
+          			<div class="controls">
+            			<input type="text" id="zipcode2" name="zipcode2" placeholder="Add On"  value="" maxlength=4>
+          			</div>
+          			<label id="add_on_error"></label>
+        		</div>
+        		
+
+        		<div class="control-group signup float_left clear_left signupButtonDiv">
+          			<div class="controls">
+            		<button type="submit" class="btn button_common_style" name="signup" id="signupButton">Sign up</button>
+            		<label id="form_error"></label>
+          			</div>
+          		</div>    
+          		
+          		<span class="username_present"></span>
+          		    	              
+      		</form>
+  		</div>      		
+	</aside>    
+</div>

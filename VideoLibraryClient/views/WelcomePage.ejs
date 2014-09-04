@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="utf-8">
+	
+	
+	<link rel="stylesheet" href="./css/multiple_select_style.css">  
+  	<link rel="stylesheet" href="./css/chosen.css">
+  	
+	<link rel="stylesheet" href="./css/slider.css">
+	<link rel="stylesheet" href="./css/common_style.css">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/templatemo_misc.css">
+	<link rel="stylesheet" href="./css/templatemo_style.css">
+	<link rel="stylesheet" href="./css/flexslider_style.css">
+	<link rel="stylesheet" href="./css/left_navbar_style.css">
+	<link rel="stylesheet" href="./css/admin.css">
+	<link rel="stylesheet" href="./css/normalUser.css">
+	
+	<link rel="stylesheet" href="./css/normalUser.css">
+	
+	<link rel="stylesheet" type="text/css" href="./css/dhtmlxgrid.css">
+	<link rel="stylesheet" type="text/css" href="./css/dhtmlxgrid_dhx_terrace.css">
+	
+	<!-- JavaScripts -->
+	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.singlePageNav.js"></script>
+	<script type="text/javascript" src="./js/jquery.flexslider.js"></script>	
+	<script type="text/javascript" src="./js/custom.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	
+	<script type="text/javascript" src="./js/styling.js"></script>
+	<script type="text/javascript" src="./ui-handler.js"></script>
+	<script type="text/javascript" src="./constants.js"></script>
+	
+	
+	<!-- New -->
+	<script type="text/javascript" src="./js/jssor.core.js"></script>
+    <script type="text/javascript" src="./js/jssor.utils.js"></script>
+    <script type="text/javascript" src="./js/jssor.slider.js"></script>
+    
+    <script type="text/javascript" src="./js/dhtmlxcommon.js"></script>
+	<script type="text/javascript" src="./js/dhtmlxgrid.js"></script>  
+	        
+	<script type="text/javascript" src="./js/dhtmlxgridcell.js"></script>
+	<script type="text/javascript" src="./js/dhtmlxgrid_filter.js"></script>
+   	<script type="text/javascript" src="./js/dhtmlxgrid_excell_link.js"></script>
+   	<script type="text/javascript" src="./js/movieSideBar.js"></script>
+    
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 3,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 0,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 3
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 300,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                $SlideWidth: 275,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 150,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 3, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 4,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 0,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 0,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 3                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 809));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
+            //responsive code end
+        });
+    </script>
+</head>
+<body>
+	<div class="main_wrapper"> 
+		
+		<header>
+			<div class="logo float_left">
+				<a href="" title="logo">Video Gallery</a>
+				<span></span>
+			</div> <!-- Logo -->
+			
+			<nav class="navigation float_right">
+		        <ul class="main-menu float_left">
+		            <li class="home nav_home float_left">
+		            	<a id="home" href="" title="" class="active">Home</a>
+		            </li>
+		            <% if(data.email == null) { %>
+		            	
+		            	<li class="contact float_left">
+			            	<a id="no_login_movie" href="" title="">Movies</a>
+			            </li>
+			            		            
+			            <li class="signUp float_left">
+			            	<a id="sign_up" href="" title="" class="">Sign Up</a>
+			            </li>
+			            
+			            <li class="logIn float_left">
+			            	<a id="sign_in" href="" title="">Sign In</a>
+			            </li>
+			            
+			            <li class="signUp float_left">
+			            	<a id="members" style="display:none;" href="">Members</a>
+			            </li>
+			            <li class="contact float_left">
+			            	<a id="movies" style="display:none;"  href="">Movies</a>
+			            </li>
+			         	<li class="logIn float_left">
+			            	<a id="sign_out" style="display:none;" href="">Sign Out</a>
+			            </li>
+			         <% } else { %>
+			         	<% if(data.email === 'admin@admin.com') { %>
+				         	<li class="signUp nav_members float_left">
+				            	<a id="members" href="">Members</a>
+				            </li>
+				            <li class="contact nav_movies float_left">
+				            	<a id="movies" href="">Movies</a>
+				            </li>
+				        <% } else { %>
+				        	<li class="contact nav_movies float_left">
+				            	<a id="my_account" href="">My Account</a>
+				            </li>
+				            
+				            <li class="about nav_movies float_left">
+				            	<a id="my_movies" href="">My Movies</a>
+				            </li>
+				            
+				        <% } %>
+						<li class="logIn float_left">
+		            		<a id="sign_out" href="">Sign Out</a>
+		            	</li>
+			         <% } %>
+		        </ul>
+			</nav> <!-- navigation -->
+			
+		</header>
+		<div id="main-content">
+
+			<div id="templatemo" class="">
+				<div class="main-slider ">
+					<div class="flexslider ">
+						<ul class="slides ">
+	
+							<li class="">
+								<div class="slider-caption ">
+									<h2>3 idiots</h2>
+									<p>Comedy Movie</p>
+									<!--<a href="" class="largeButton homeBgColor">Details</a>-->
+								</div>
+								<img src="./images/3_idiots.jpg" alt="Slide 1">
+							</li>
+	
+							<li>
+								<div class="slider-caption">
+									<h2>Die Hard</h2>
+									<p>Action Movie</p>
+									<!--<a href="" class="largeButton homeBgColor">Details</a>-->
+								</div>
+								<img src="./images/dieHard.jpg" alt="Slide 2">
+							</li>
+	
+	                        <li>
+								<div class="slider-caption">
+									<h2>The Ring</h2>
+									<p>Horror movies</p>
+									<!--<a href="" class="largeButton homeBgColor">Details</a>-->
+								</div>
+								<img src="./images/theRing.jpeg" alt="Slide 3">
+							</li>
+	
+						</ul>
+					</div>
+				</div>
+								
+				
+			</div>
+			
+			<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 809px; height: 250px;">
+
+		        <!-- Loading Screen -->
+		        <div u="loading" style="position: absolute; top: 0px; left: 0px; width:100%">
+		            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+		                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+		            </div>
+		            <div style="position: absolute; display: block; 
+		                top: 0px; left: 0px;width: 100%;height:100%;">
+		            </div>
+		        </div>
+	
+		        <!-- Slides Container -->
+		        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1050px; height: 250px; overflow: hidden;">
+		            <div style="width:250px;"><img src="./images/theRing.jpeg" style="padding-right:30px; height:230px;"/></div>
+		            <div style="width:250px;"><img src="./images/dieHard.jpg" style="padding-right:30px; height:230px;"/></div>
+		            <div style="width:250px;"><img src="./images/3_idiots.jpg" style="padding-right:30px; height:230px;"/></div>
+		            <div style="width:250px;"><img src="./images/theRing.jpeg" style="padding-right:30px; height:230px;"/></div>
+		            <div style="width:250px;"><img src="./images/dieHard.jpg" style="padding-right:30px; height:230px;"/></div>
+		            <div style="width:250px;"><img src="./images/3_idiots.jpg" style="padding-right:30px; height:230px;"/></div>
+	        	</div>
+	       
+	        	<!-- Arrow Left -->
+		        <span u="arrowleft" class="jssora03l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+		        </span>
+		        <!-- Arrow Right -->
+		        <span u="arrowright" class="jssora03r" style="width: 55px; height: 55px; top: 123px; right: -240px">
+		        </span>
+	        
+	    	</div>
+	    	
+			<div class="push"></div>
+		</div>
+		
+		<div class="footer_div float_left">
+			<footer class="float_left">			
+				<div class="col-md-6 float_left">
+					<p class="copyright float_left" style="color:white; margin-left:20px;">Copyright 2014</p>
+				</div> <!-- /.col-md-6 -->											
+			</footer>
+		</div>
+	</div>
+	
+	
+  	
+</body>
+</html>

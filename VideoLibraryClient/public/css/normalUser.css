@@ -1,0 +1,71 @@
+section.view_my_info
+{	
+	margin-left: 8%;
+	margin-top: 3%;
+	width:92%;
+}
+
+section.view_my_info .control-group
+{
+	width:100%;
+}
+
+div.signup label.view_common_value
+{
+	font-size:16px;
+	margin-left: 20px;
+	color : white;
+}
+
+ section.section_bill
+{
+	margin-left: 30%;
+	margin-top: 2%;
+}
+
+section.edit_my_information
+{
+	margin-left: 17%;
+	margin-top: 2%;
+}
+
+section.edit_my_information .zipe_code_divider 
+{
+	margin-top: 35px;
+}
+
+div.saveChangeEditButtonDiv
+{
+	margin-left: 29%;
+}
+
+.zipe_code_adjust1
+{
+	margin-top: 20px;
+}
+
+#year
+{
+	margin-left: 20px;
+	width: 35%; 
+}
+
+.month
+{
+	width: 30%;
+}
+
+#cvv
+{
+	width: 30%;
+}
+
+label.display_movie_title, label.display_movie_content
+{
+	width: 100%;
+}
+
+.display_movie_title span, .display_movie_content span
+{
+	width: 30%;
+}

@@ -1,0 +1,39 @@
+<p class="no_record">No record found</p>
+<section class="section_container float_left">
+	<aside class="signup_form float_left">
+	
+		<div id='cssmenu' class="float_left movies_left_bar">
+			<ul>					   
+			   <li class="active all_movie"><label><span>All Movie</span></label></li>
+			   <li class="create_movie"><label><span>Create Movie</span></label></li>
+			   <li class="issue_movie"><label><span>Issue Movie</span></label></li>	
+			   <li class="submit_movie"><label><span>Submit Movie</span></label></li>
+			   <li class="movie_member"><label><span>Movie Member</span></label></li>				   					   
+			</ul>
+		</div>
+		
+		<section class="movie_default float_left">
+			
+			<div id="movieGridbox" style="width:950px;height:550px;background-color:white;overflow:hidden">
+			</div>
+			<br>
+			<script>
+				initSearchMoviesGrid();
+			</script>					
+		</section>  
+		
+		
+			
+		<script src="./js/chosen.jquery.js" type="text/javascript"></script>
+	
+		<script type="text/javascript">
+		    var config = {    		
+		      '.chosen-select' : {},	      
+		    }
+		    for (var selector in config) {
+		      $(selector).chosen(config[selector]);
+		    }
+	  	</script>
+		
+	</aside>	
+</section>

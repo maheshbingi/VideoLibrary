@@ -1,0 +1,179 @@
+section.simple_member_information
+{
+	margin-left: 18%;
+	margin-top: 20px;
+}
+
+section.simple_member_information .title_edit_info
+{
+	margin-left: 120px;
+}
+
+#save_changes_button, #delete_simple_member
+{
+	margin-right: 50px;
+}
+
+.simple_member_default, .movie_default
+{
+	width :75%;
+}
+
+
+div.signup label.common_label
+{
+	font-size: 16px;
+	color : #E9B144;
+}
+
+div.controls input#admin_edit_add_on
+{
+	margin-top: 24px;
+}
+
+button.button_style
+{
+	border: 0px;
+	color: white;
+	text-transform: uppercase;	
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px 19px;
+	border-bottom: 3px solid #16709F;
+	background: #38a9e3;
+	width : 100%;
+}
+
+button.button_style:hover
+{
+	padding: 7px 22px;
+	background: #16709F;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+section.movie_information, section.section_create_movie, section.section_submit_movie 
+{
+	margin-left: 25%;
+	margin-top: 2%;
+}
+
+div.section_create_movie
+{
+	margin-left: 25%;
+	margin-top: 2%;
+}
+
+section.section_submit_movie form
+{
+	width : 85%;
+}
+
+section.section_submit_movie form div.select_multiple_div
+{
+	margin : 0px;
+}
+
+#add_movie_button
+{	
+	width : 100%;
+}
+
+p.no_record
+{
+	float: left;
+	position: relative;
+	font-size: 20px;
+	top: 200px;
+	left: 575px;
+	color: black;
+	font-weight: bold;
+	z-index: 10;
+	display:none;
+}
+
+p.no_record_members,p.no_record_members_submit, p.no_record_members_movieOfMembers 
+{
+	float: left;
+	position: relative;
+	font-size: 20px;
+	top: 200px;
+	left: 275px;
+	color: black;
+	font-weight: bold;
+	z-index: 10;
+	display:none;
+}
+
+p.no_record_movies, p.no_record_movies_submit, p.no_record_movies_movieOfMembers
+{
+	float: left;
+	position: relative;
+	font-size: 20px;
+	top: 200px;
+	left: 600px;
+	color: black;
+	font-weight: bold;
+	z-index: 10;
+	display:none;
+}
+
+p.no_record_movies_submit_one
+{
+	float: left;
+	position: relative;
+	font-size: 20px;
+	top: 200px;
+	left: 758px;
+	color: black;
+	font-weight: bold;
+	z-index: 10;
+	display:none;
+}
+
+p.no_record_movies_movieOfMembers
+{
+	left:750px;
+}
+
+p.no_login_no_record 
+{
+	float: left;
+	position: relative;
+	font-size: 20px;
+	top: 200px;
+	left: 450px;
+	color: black;
+	font-weight: bold;
+	z-index: 10;
+	display:none;
+}
+
+div#submitSignUp
+{
+	margin-left: 140px;
+}
+
+div.issueMovieButtonDiv
+{
+	margin-left: 37%;
+    margin-top: 30px;
+}
+
+.movie_default_no_login
+{
+	width:100%;
+}
+
+section.edit_my_information_admin.edit_my_information
+{
+	margin:0px;
+	width: 70%;
+	margin-left: 43px;
+}
+
+.issue_member_label, .issue_movies_label, .submit_movies_label, .submit_member_label 
+{
+	color: white;
+	font-size: 18px;
+}

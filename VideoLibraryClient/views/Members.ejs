@@ -1,0 +1,104 @@
+<p class="no_record">No record found</p>
+<div class="main_wrapper">
+	<aside class="signup_form float_left">
+			<div id='cssmenu' class="float_left">
+				<ul>					   
+				   <li class="active li_member"><label><span>Member</span></label></li>
+				   <li class="li_simple_member"><label><span>Simple Member</span></label></li>
+				   <li class="li_premium_member"><label><span>Premium Member</span></label></li>				   
+				</ul>
+			</div>			
+			<section class="simple_member_default float_left">				
+				<div id="searchGrid" style="width:1%; height:550px; background-color:white; overflow:hidden; ">
+				</div>
+				<br>
+				<script>
+					//the customerType = simple here this value should come from server.
+					// premium tab is not completed yet 
+					initSearchGrid();
+				</script>					
+			</section>  
+				
+			<section class="simple_member_information float_left" style="display:none;">
+				<form class="form-horizontal float_left" action="" method="post">
+	      		                
+	      		    <div class="control-group title_edit_info signup float_left clear_left">		          			          
+	          			<label id="page-info" style="color:white;">Edit Information</label>
+	        		</div>
+	        		
+	         		<div class="control-group signup float_left clear_left">
+	          			<div class="controls">
+	          				<label class="common_label">First Name</label>
+	            			<input type="text" id="admin_edit_firstname" placeholder="Firstname" name="firstname" value="">
+	          			</div>          
+	          			<label id="admin_edit_firstname_error"></label>
+	        		</div>
+	        
+	         		<div class="control-group signup float_left marginLeft50">
+	          			<div class="controls">
+	          				<label class="common_label">Last Name</label>
+	            			<input type="text" id="admin_edit_lastname" placeholder="Lastname" name="lastname" value="">
+	          			</div>          
+	          			<label id="admin_edit_lastname_error"></label>
+	        		</div>
+	        
+	        		<div class="control-group signup float_left clear_left">
+	          			<div class="controls">
+	          				<label class="common_label">Email</label>
+	            			<input type="text" id="admin_edit_email" name="email" placeholder="Email"  value="" >
+	          			</div>
+	          			<label id="admin_edit_email_error"></label>
+	        		</div>
+	                		        
+	        		<div class="control-group signup float_left clear_left">
+	          			<div class="controls">
+	          				<label class="common_label">Street</label>
+	            			<input type="text" id="admin_edit_street" name="street" placeholder="Street"  value="" >
+	          			</div>
+	          			<label id="admin_edit_street_error"></label>
+	        		</div>	        	        		        			        		
+  					
+  					<div class="control-group signup float_left clear_left">
+	          			<div class="controls">
+	          				<label class="common_label">City</label>
+	            			<input type="text" id="admin_edit_city" name="city" placeholder="City"  value="" >
+	          			</div>
+	          			<label id="admin_edit_city_error"></label>
+	        		</div>
+	        		
+	        		<div class="control-group signup float_left marginLeft50">		
+	        			<label class="common_label">State</label>			
+    					<select name="state" class="dropdown_list admin_edit_name_of_state">
+    						<option value="state_name">Choose a State</option>
+							<option value="california">California</option>
+							<option value="texas">Texas</option>
+							<option value="newyork">Newyork</option>							
+						</select>    					
+  					</div>
+  					
+  					<div class="control-group signup float_left clear_left zipe_code_adjust">
+	          			<div class="controls">
+	          				<label class="common_label">Zip Code</label>
+	            			<input type="text" id="admin_edit_zipcode1" name="zipcode1" placeholder="Zipcode"  value="" maxlength=5>
+	          			</div>
+	          			<label id="admin_edit_zipcode1_error"></label>
+	        		</div>
+	        		<span class="zipe_code_divider member_divider float_left"></span>
+	        		<div class="control-group signup float_left zipe_code_adjust">
+	          			<div class="controls">
+	            			<input type="text" id="admin_edit_add_on" name="add_on" placeholder="Add On"  value="" maxlength=4>
+	          			</div>
+	          			<label id="admin_edit_add_on_error"></label>
+	        		</div>		        				        		     			
+	
+	        		<div class="control-group signup float_left clear_left signupButtonDiv" id="submitSignUp">
+	          			<div class="controls">
+	            		<button type="button" class="btn button_style" name="save_changes_button" id="save_changes_button">Save Changes</button>		            		
+	          			</div>
+	          		</div>
+	          			          		
+	          		    	              
+	      		</form>
+		</section>
+	</aside>
+</div>

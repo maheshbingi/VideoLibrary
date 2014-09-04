@@ -1,0 +1,70 @@
+<form class="form-horizontal float_left" action="" method="post" style="width: 100%;>
+	<div class="control-group signup float_left clear_left">
+		<div class="control-group signup float_left clear_left">		          			          
+  			<label id="page-info" style="color:white;" class="marginLeft50">Payment</label>
+		</div>
+		
+		<div class="control-group signup float_left clear_left">
+  			<div class="controls">
+    			<input type="text" id="credit_card_number" placeholder="Credit card number" name="credit_card_number" value="">
+  			</div>          
+		</div>  
+		
+ 		<div class="control-group signup float_left clear_left">
+  			<div class="controls">
+    			<input type="text" id="payment_name" placeholder="Name on the Card" name="payment_name" value="">
+  			</div>            			
+		</div>
+		
+		<div class="control-group signup float_left clear_left" style="width:40%;">
+  			<div class="controls float_left clear_left" style="width:100%;">    			
+    			<select class="float_left clear_left month" style="width:80%;">
+				  	<option value="0">MM</option>
+				  	<option value="1">01</option>
+				  	<option value="2">02</option>
+				  	<option value="3">03</option>
+				  	<option value="4">04</option>
+				  	<option value="5">05</option>
+				  	<option value="6">06</option>
+				  	<option value="7">07</option>
+				  	<option value="8">08</option>
+				  	<option value="9">09</option>
+				  	<option value="10">10</option>
+				  	<option value="11">11</option>
+				  	<option value="12">12</option>
+				</select>				
+  			</div>          
+		</div> 
+		
+		<div class="control-group signup float_left" style="width:48%; margin-left:20px;">
+  			<div class="controls float_left clear_left" style="width:100%;">    			    			
+				<select class="float_left clear_left year" style="width:100%;">
+				  	<option value="0">YEAR</option>
+				  	<option value="1">2015</option>
+				  	<option value="2">2016</option>
+				  	<option value="3">2017</option>
+				  	<option value="4">2018</option>
+				  	<option value="5">2019</option>
+				  	<option value="6">2020</option>
+				  	<option value="7">2021</option>
+				  	<option value="8">2022</option>
+				</select>											
+  			</div>          
+		</div> 
+		
+		<div class="control-group signup float_left clear_left">
+  			<div class="controls">
+    			<input type="password" id="cvv" placeholder="CVV" name="cvv" value="" maxlength=3>
+  			</div>          
+		</div>        		          			
+	</div>
+	
+	<input type="hidden" id="person_id" name="person_id" value="<%=data["person_id"]%>">
+	<input type="hidden" id="bill_amount" name="bill_amount" value="<%=data["amount_due"]%>">
+			        				        		
+	<div class="control-group signup float_left saveChangeEditButtonDiv">
+		<div class="controls">
+			<button type="button" class="btn button_style" name="payment_done" id="payment_done">Pay</button>		            		
+		</div>
+	</div>
+</form>

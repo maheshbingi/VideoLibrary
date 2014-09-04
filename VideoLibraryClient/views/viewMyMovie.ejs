@@ -1,0 +1,48 @@
+<body>
+	<div class="main_wrapper"> 		
+		<section class="section_container float_left">
+			<aside class="signup_form float_left">					
+				<section class="view_my_info float_left">
+					<div class="user_info_wrapper float_left" style="width:100%;">								
+						<div class="control-group signup float_left clear_left">
+			      			<div class="controls float_left">
+			      				<label class="common_label float_left">Movies issued are:</label>		            			
+			      			</div>          	          			
+			    		</div>	
+			    		
+			    		<div class="control-group signup float_left clear_left">
+			      			<div class="controls float_left" style="width:100%;">
+			      				<label class="common_label float_left display_movie_title">			      								      							
+	      							<span class="float_left clear_left" style="color:#16709f;  margin-bottom:10px;">Movie Name</span>
+	      							<span class="float_left" style="color:#16709f;  margin-bottom:10px;">Banner Name</span>
+	      							<span class="float_left" style="color:#16709f;  margin-bottom:10px;">Rent Amount</span>
+			      				</label>
+			      				
+			      				<label class="common_label float_left display_movie_content">
+			      					<% if(data.length!=0)
+			      					{ %>			      						
+			      					 <% for(i in data) 
+			      						{ %>			      							
+			      							<span class="float_left clear_left" style="color:white;  margin-bottom:10px;"><%= data[i].name %></span>
+			      							<span class="float_left" style="color:white;  margin-bottom:10px;"><%= data[i].banner %></span>
+			      							<span class="float_left" style="color:white;  margin-bottom:10px;"><%= data[i].rent_amount %></span>
+			      					<%	}
+			      					}
+			      					else
+			      					{ %>
+			      						<span class="float_left clear_left" style="color:white; margin-left:29%; margin-top:10px; margin-bottom:10px;">NO RECORD FOUND</span>
+			      				<%	}
+			      					
+			      					%>			      					
+			      				</label>		            			
+			      			</div>          	          			
+			    		</div>	
+					</div>	
+				</section>
+			</aside>
+		</section>
+	</div>
+</body>
+
+
+	

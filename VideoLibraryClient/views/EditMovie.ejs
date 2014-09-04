@@ -1,0 +1,110 @@
+<section class="movie_information float_left">
+			<form class="form-horizontal float_left" action="" method="post">
+      		                
+      		    <div class="control-group title_edit_info signup float_left clear_left">		          			          
+          			<label id="page-info" style="color:white;">Movie Information</label>
+        		</div>
+        		
+        		<input type="hidden" id="movie_id" name="movie_id" value="<%= data.currentMovie.id %>" >
+        		
+         		<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+          			<label class="common_label">Movie Name</label>
+            			<input type="text" id="movie_name" placeholder="Movie Name" name="movie_name" value="<%= data.currentMovie.name%>">
+          			</div>          
+          			<label id="admin_edit_movie_name_error"></label>
+        		</div>
+        		
+        		<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+          				<label class="common_label">Category</label>
+            			<select id="movie_category" name="movie_category" class="form-control" tabindex="4" multiple="multiple">
+            				<% if(typeof data != 'undefined') { %>
+									<% 
+										for(var i = 0; i < data.allCategories.length; i++) { 
+											var flag=0;
+										%>		
+										<% for(var j = 0; j < data.currentMovie.categories.length; j++) { 
+											if(data.allCategories[i].name == data.currentMovie.categories[j])
+											{
+												flag=1; 
+											%>				
+												<option id="<%= data.allCategories[i].id%>" value="<%= data.allCategories[i].id%>" selected="selected"><%= data.allCategories[i].name %></option>
+											<%  } 
+											 } 
+											 if(flag==0)
+											 { %>
+											 	<option id="<%= data.allCategories[i].id%>" value="<%= data.allCategories[i].id%>"><%= data.allCategories[i].name %></option>
+											 <% } %>
+										
+									<% }
+								 } %>					          
+				          </select> 
+          			</div>          			
+        		</div>
+        		
+        		
+        
+        		<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+          				<label class="common_label">Banner</label>
+            			<input type="text" id="banner" name="banner" placeholder="Banner"  value="<%= data.currentMovie.banner%>" >
+          			</div>
+          			<label id="admin_edit_banner_error"></label>
+        		</div>
+                		        
+        		<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+          				<label class="common_label">Release Date</label>
+            			<input type="text" id="release_date" name="release_date" placeholder="Release date"  value="<%= data.currentMovie.release_date%>" >
+          			</div>
+          			<label id="admin_edit_release_date_error"></label>
+        		</div>	   
+        		
+        		     	        		        			        		
+				
+				<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+          				<label class="common_label">Rent Amount</label>
+            			<input type="text" id="rent_amount" name="rent_amount" placeholder="Rent Amount"  value="<%= data.currentMovie.rent_amount%>" >
+          			</div>
+          			<label id="admin_edit_rent_amount_error"></label>
+        		</div>
+						
+				<div class="control-group signup float_left clear_left">
+          			<div class="controls">
+          				<label class="common_label">Available Copies</label>
+            			<input type="text" id="available_copies" name="available_copies" placeholder="Available Copies"  value="<%= data.currentMovie.available_copies%>" >
+          			</div>
+          			<label id="admin_edit_available_copies_error"></label>
+        		</div>        				        		     			
+
+        		<div class="control-group signup float_left clear_left signupButtonDiv">
+          			<div class="controls">
+            		<button type="button" class="btn button_style" name="save_movie_changes_button" id="save_movie_changes_button">Save Changes</button>		            		
+          			</div>
+          		</div>
+          		
+          		    	              
+      		</form>
+		</section>
+		
+		<!-- <script>
+			$(document).ready(function(){
+				$("select#movie_category option").click(function(){
+					alert($(this).attr('id'));
+				});
+			});
+		</script> -->
+		
+		<!-- <script>
+			function getValue()
+			{
+			  var x=document.getElementById("sel");
+			  for (var i = 0; i < x.options.length; i++) {
+			     if(x.options[i].selected ==true){
+				      alert(x.options[i].value);
+				  }
+			  }
+			}
+			</script> -->
