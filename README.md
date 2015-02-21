@@ -8,7 +8,7 @@ The Video Library Management system you will implement will manage different typ
 - Simple Customers
 
 
-### Implemented following performance tuning techniques : 
+### Implemented following performance tuning techniques: 
 - Database connection pooling
 - SQL and object caching using Redis 
 - Data denormalization
